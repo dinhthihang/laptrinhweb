@@ -11,7 +11,7 @@ public class Product implements Serializable{
     private long price;
     private long priceSale;
 
-    public Product(){
+    public Product(String string, String rsString, String s, long aLong, long rsLong, long l){
 
     }
     public Product(String id, String name, String img, long price, long priceSale){

@@ -167,9 +167,11 @@
             </div>
             <div class="col-md-3 header-right">
                 <div class="search-bar">
-                    <input type="text" value="Tìm Kiếm" onfocus="this.value = '';"
+                    <form action="SearchControl?index=1" method="post" accept-charset="utf-8">
+                    <input type="txtSearch" name="txtSearch"  placeholder="Tìm Kiếm" onfocus="this.value = '';"
                            onblur="if (this.value == '') {this.value = 'Search';}">
-                    <input type="submit" value="">
+                    <input type="submit" name="submit">
+                    </form>
                 </div>
             </div>
             <div class="clearfix"> </div>

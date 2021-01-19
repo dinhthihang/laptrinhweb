@@ -234,7 +234,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                         </div>
 
-						<c:forEach items="${data}" var="d">
+						<c:forEach items="${list}" var="d">
 							<div class="col-md-3 product-left" id="nu">
 								<div class="product-main simpleCart_shelfItem">
 									<a href="single.html" class="mask"><img class="img-responsive zoom-img"
@@ -257,6 +257,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</c:forEach>
 
                         <div class="clearfix"></div>
+						<nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-center">
+								<c:forEach begin="1" end="${endPage}" var="i">
+								<li class="page-item"><a class="page-link" href="SearchControl?index=${i}&txtSearch=${txtSearch}">${i}</a></li>
+								</c:forEach>
+								<li class="page-item">
+									<a class="page-link" href="SearchControl?index=${index+1}&txtSearch=${txtSearch}">Next</a>
+								</li>
+							</ul>
+						</nav>
                     </div>
 
                 </div>
