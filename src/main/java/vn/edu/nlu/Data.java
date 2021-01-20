@@ -23,7 +23,5 @@ public class Data implements Serializable {
         map.put("01", new Product("01","Daniel Wellington DW00100139 – Nữ – Quartz (Pin) – Dây Da – Mặt Số 36MM","images/51_DW00100139-399x399.png",20000000,100000));
         map.put("02", new Product("02","Daniel Wellington DW00100139 – Nữ – Quartz (Pin) – Dây Da – Mặt Số 36MM","images/51_DW00100139-399x399.png",20000000,100000));
         map.put("03", new Product("03","Daniel Wellington DW00100139 – Nữ – Quartz (Pin) – Dây Da – Mặt Số 36MM","images/51_DW00100139-399x399.png",20000000,100000));
-
-
     }
 }
