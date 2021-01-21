@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: dinht
@@ -6,6 +7,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<link href="./css/style.css"/>
+
 <html>
 <head>
     <title>Title</title>
@@ -33,14 +36,19 @@
                     </div>
 
                     <div class="box2">
-                        <a>ĐĂNG NHẬP</a>
+                        <c:if test="${sessionScope.acc != null}">
+                            <a href="dangnhap.jsp">ĐĂNG XUẤT</a>
+                        </c:if>
+                        <c:if test="${sessionScope.acc == null}">
+                            <a >ĐĂNG NHẬP</a>
+                        </c:if>
+
                         <ul id="kkk">
                             <li class="menu-tiki1"><a id="dangnhapdechon">Đăng nhập</a></li>
                             <li class="menu-tiki2"><a id="close1" style="color: black;">Tạo tài khoản</a></li>
                             <li class="menu-tiki3"><a>Đăng nhập bằng Facebook</a></li>
                             <li class="menu-tiki4"><a>Đăng nhập bằng Google</a></li>
                             <li class="menu-tiki5"><a>Đăng nhập băng Zalo</a></li>
-
                         </ul>
                     </div>
                     <div class="clearfix"></div>
